@@ -64,15 +64,15 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 mobile-style push-desktop">
                   <div class="box-search">
-                    <form action="" method="get" role="form">
+                    <form action="<?php bloginfo('url'); ?>" method="GET" role="form">
                       <select name="product-cat" id="product-cat">
                         <option value="1">Danh mục</option>
                         <option value="1">Laptop</option>
                         <option value="1">Quần áo nam</option>
                         <option value="1">Quần áo nữ</option>
                       </select>
-                      <input type="text" placeholder="Từ khóa...">
-                      <button>Tìm kiếm</button>
+                      <input type="text" name="s" placeholder="Từ khóa...">
+                      <button type="submit">Tìm kiếm</button>
                       <div class="clear"></div>
                     </form>
                   </div>

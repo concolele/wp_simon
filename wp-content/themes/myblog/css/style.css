@@ -195,10 +195,11 @@ header .main-menu {
     color:  #fff;
     padding: 10px;
     position:  absolute;
-    font-size: 18px;
+    font-size: 20px;
     top: -10px;
     left: -50px;
-    width: 40px;
+    width: 41px;
+    height: 41px;
 }
 
 li#active-menu-content {
@@ -207,6 +208,7 @@ li#active-menu-content {
     display:  inline-block;
     position:  relative;
     width: 100%;
+    height:  42px;
 }
 
 .content .box-category .top-content-menu span {
@@ -216,7 +218,7 @@ li#active-menu-content {
     position:  relative;
     text-transform:  uppercase;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     /* transform: translateY(-50%); */
 }
 
@@ -309,6 +311,38 @@ li#active-menu-content {
 
 .content .item-img {
     position: relative;
+}
+
+.search-page .nav-pills>li>a {
+    font-size: 16px;
+    font-weight:  bold;
+}
+
+.search-info {
+    display:  inline-block;
+    background:  #ffff;
+    width:  100%;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+}
+
+.search-info form {
+    display:  inline-block;
+    float:  right;
+}
+
+select#search-sort {
+    padding: 2px;
+    border: 1px solid #e3e3e3;
+}
+
+select#search-sort:focus {
+    border: 1px solid #2196f3;
+}
+
+.search-info p {
+    display:  inline-block;
+    line-height: 25px;
 }
 
 .content .detail-mask i {
@@ -707,6 +741,21 @@ footer .bot-footer p {
     font-size:  16px;
 }
 
+.search-page .tab-product {
+    margin-top:  0;
+}
+
+.breadcrumb {
+    margin-bottom:  0;
+    background: #fff;
+    line-height:  25px;
+}
+
+.breadcrumb p i {
+    color:  #2196f3;
+    margin-right: 5px;
+}
+
 @media (max-width : 320px) {
 
 }
@@ -938,7 +987,7 @@ footer .bot-footer p {
     }  
 
     .content .list-product {
-        width: 25%;
+        width: 20%;
     }  
 
     .container {
@@ -1024,7 +1073,7 @@ footer .bot-footer p {
         max-width: 1170px;
     }
     .content .list-product {
-        width: 20%;
+        width: 25%;
     }
     header .menu-top .main-menu ul li {
         padding: 15px 20px;

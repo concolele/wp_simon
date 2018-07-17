@@ -11,7 +11,7 @@
       <?php 
         $args = array(
           'post_status' => 'publish', // Chỉ lấy những bài viết được publish
-          'showposts' => 3, // số lượng bài viết
+          'showposts' => 2, // số lượng bài viết
         );
       ?>
       <?php $getposts = new WP_query($args); ?>
@@ -21,15 +21,20 @@
           <?php echo get_the_post_thumbnail( get_the_id(), 'slider-thumb', array('alt' => get_the_title(), 'class' => 'images-slider' ));  ?>
         </div>
       <?php endwhile; wp_reset_postdata(); ?>
-<!--       <div class="item active">
-        <img src="<?php bloginfo('template_directory') ?>/img/banner.jpg" alt="">
-      </div>
-      <div class="item">
-        <img src="<?php bloginfo('template_directory') ?>/img/banner2.jpg" alt="">
-      </div>
-      <div class="item">
-        <img src="<?php bloginfo('template_directory') ?>/img/banner3.jpg" alt="">
-      </div> -->
+      <?php 
+        $args = array(
+          'post_status' => 'publish', // Chỉ lấy những bài viết được publish
+          'showposts' => 1, // số lượng bài viết
+          'offset' => 2, // bỏ qua 2 bài
+        );
+      ?>
+      <?php $getposts = new WP_query($args); ?>
+      <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+      <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
+        <div class="item active">
+          <?php echo get_the_post_thumbnail( get_the_id(), 'slider-thumb', array('alt' => get_the_title(), 'class' => 'images-slider' ));  ?>
+        </div>
+      <?php endwhile; wp_reset_postdata(); ?>
     </div>
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
