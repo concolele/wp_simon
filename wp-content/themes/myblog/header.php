@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/libs/font-awesome/css/font-awesome.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/css/style.css">
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/css/product.css">
   <?php wp_head(); ?>
 </head>
 <body class="home blog">

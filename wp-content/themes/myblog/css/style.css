@@ -756,6 +756,10 @@ footer .bot-footer p {
     margin-right: 5px;
 }
 
+.single-page img {
+    width: 100%;
+}
+
 @media (max-width : 320px) {
 
 }
