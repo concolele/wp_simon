@@ -106,61 +106,7 @@
                     <ul class="nav nav-pills">
                       <li class="active"><a data-toggle="pill" href="#home">Tin tức</a></li>
                     </ul>
-                    <div class="tab-content">
-                      <div id="home" class="tab-pane fade in active">
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="news-one">
-                              <a href=""><img src="<?php bloginfo('template_directory') ?>/img/nokia-6-treasure-tag-2-15179774412072055854573.jpg" alt=""></a>
-                              <a class="news-title">Q4/2017: HMD Global bán được 21,5 triệu máy Nokia, 17,3 triệu chiếc</a>
-                              <div class="meta">
-                                <span>Ngày đăng: 05/04/2018</span>
-                                <span>Lượt xem: 84</span>
-                              </div>
-                              <p class="news-content">HMD Global (công ty sở hữu thương hiệu Nokia) đã có một quý kinh doanh cuối cùng trong năm 2017 vô cùng khởi sắc. Theo dữ liệu từ hãng...</p>
-                            </div>
-                          </div>
-                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="news-other">
-                              <div class="pull-left">
-                                <a href=""><img src="<?php bloginfo('template_directory') ?>/img/nokia-6-treasure-tag-2-15179774412072055854573.jpg" alt=""></a>
-                              </div>
-                              <div class="pull-right">
-                                <a class="news-title">Q4/2017: HMD Global bán được 21,5 triệu máy Nokia, 17,3 triệu chiếc</a>
-                                <div class="meta">
-                                  <span>Ngày đăng: 05/04/2018</span>
-                                  <span>Lượt xem: 84</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="news-other">
-                              <div class="pull-left">
-                                <a href=""><img src="<?php bloginfo('template_directory') ?>/img/nokia-6-treasure-tag-2-15179774412072055854573.jpg" alt=""></a>
-                              </div>
-                              <div class="pull-right">
-                                <a class="news-title">Q4/2017: HMD Global bán được 21,5 triệu máy Nokia, 17,3 triệu chiếc</a>
-                                <div class="meta">
-                                  <span>Ngày đăng: 05/04/2018</span>
-                                  <span>Lượt xem: 84</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="news-other">
-                              <div class="pull-left">
-                                <a href=""><img src="<?php bloginfo('template_directory') ?>/img/nokia-6-treasure-tag-2-15179774412072055854573.jpg" alt=""></a>
-                              </div>
-                              <div class="pull-right">
-                                <a class="news-title">Q4/2017: HMD Global bán được 21,5 triệu máy Nokia, 17,3 triệu chiếc</a>
-                                <div class="meta">
-                                  <span>Ngày đăng: 05/04/2018</span>
-                                  <span>Lượt xem: 84</span>
-                                </div>
-                              </div>
-                            </div>                                                        
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <?php get_template_part('news_tab'); ?>
                   </div><!--end news-->
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">

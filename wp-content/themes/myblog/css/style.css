@@ -802,6 +802,29 @@ footer .bot-footer p {
     background: #ff9800;
 }
 
+.content p.item-name {
+    text-overflow:  ellipsis;
+    white-space:  nowrap;
+    overflow:  hidden;
+}
+
+.cate-page .quatrang {
+    text-align:  center;
+}
+
+.cate-page span.page-numbers.current {
+    padding: 10px 15px;
+    background:  #fff;
+    font-size: 16px;
+}
+
+.cate-page a.page-numbers {
+    padding:  10px 15px;
+    background:  #2196f3;
+    font-size:  16px;
+    color:  #fff;
+}
+
 @media (max-width : 320px) {
 
 }
@@ -1119,7 +1142,7 @@ footer .bot-footer p {
         max-width: 1170px;
     }
     .content .list-product {
-        width: 25%;
+        width: 20%;
     }
     header .menu-top .main-menu ul li {
         padding: 15px 20px;

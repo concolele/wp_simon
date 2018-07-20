@@ -4,7 +4,7 @@
         $args = array(
           'post_status' => 'publish', // Chỉ lấy những bài viết được publish
           'showposts' => 10, // số lượng bài viết
-          'cat' => 7, // lấy cate id = 7
+          'cat' => 7, // bỏ qua 2 bài
         );
       ?>
       <?php $getposts = new WP_query($args); ?>
